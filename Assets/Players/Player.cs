@@ -16,7 +16,7 @@ public class Player : NetworkBehaviour {
 	void Update ()
 	{
 		// moves only YOU
-		if (isLocalPlayer) {
+		if (!isLocalPlayer) {
 			return;
 		}
 		Debug.Log("got here");
